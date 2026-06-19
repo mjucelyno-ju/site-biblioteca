@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jucelyno</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Portal Acadêmico da Turma</h1>
+            <p>Recursos organizados com Grid e estados interativos em CSS.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="painel" aria-labelledby="titulo-recursos">
+            <h2 id="titulo-recursos">Recursos do portal</h2>
+
+            <div class="grade-cards">
+                <article class="card card-destaque">
+                    <h3>Trilha de estudos</h3>
+                    <p>Consulte a sequência recomendada de conteúdos e atividades da disciplina.</p>
+                    <a class="link-card" href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development">
+                        Consultar trilha
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>HTML5</h3>
+                    <p>Estrutura e semântica para organizar o conteúdo das páginas.</p>
+                    <a class="link-card" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                        Estudar HTML
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>CSS</h3>
+                    <p>Cores, tipografia, espaçamentos e identidade visual.</p>
+                    <a class="link-card" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
+                        Estudar CSS
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Flexbox</h3>
+                    <p>Distribuição de elementos em uma linha ou coluna.</p>
+                    <a class="link-card"
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout">
+                        Revisar Flexbox
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>CSS Grid</h3>
+                    <p>Organização bidimensional por linhas e colunas.</p>
+                    <a class="link-card" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout">
+                        Revisar Grid
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Formulários</h3>
+                    <p>Controles e validações nativas para entrada de dados.</p>
+                    <a class="link-card"
+                        href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Forms">
+                        Revisar formulários
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="painel" aria-labelledby="titulo-preferencias">
+            <h2 id="titulo-preferencias">Preferências de estudo</h2>
+
+            <form class="formulario">
+                <label class="campo" for="email">
+                    <span>E-mail institucional</span>
+                    <input id="email" name="email" type="email" placeholder="nome@ifrn.edu.br" required />
+                </label>
+
+                <label class="opcao" for="receber-alertas">
+                    <input id="receber-alertas" name="alertas" type="checkbox" />
+                    <span>Receber alertas de novos materiais</span>
+                </label>
+
+                <button class="botao" type="submit">Salvar preferências</button>
+                <button class="botao botao-secundario" type="button" disabled>Exportar relatório</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Disciplina de Padrões Web - IFRN Campus Currais Novos</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
